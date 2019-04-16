@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC0A805C22632EC20067222B /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0A805B22632EC20067222B /* Calculate.swift */; };
 		CC1A2F28225DE331007A45D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A2F27225DE331007A45D3 /* AppDelegate.swift */; };
 		CC1A2F2A225DE331007A45D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1A2F29225DE331007A45D3 /* ViewController.swift */; };
 		CC1A2F2D225DE331007A45D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1A2F2B225DE331007A45D3 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CC0A805B22632EC20067222B /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
 		CC1A2F24225DE331007A45D3 /* calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC1A2F27225DE331007A45D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC1A2F29225DE331007A45D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		CCA32A70225DE465007C965D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC0A805B22632EC20067222B /* Calculate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0A805C22632EC20067222B /* Calculate.swift in Sources */,
 				CC1A2F2A225DE331007A45D3 /* ViewController.swift in Sources */,
 				CC1A2F28225DE331007A45D3 /* AppDelegate.swift in Sources */,
 			);
@@ -316,7 +320,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XVKPQ55YF;
-				INFOPLIST_FILE = calculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XVKPQ55YF;
-				INFOPLIST_FILE = calculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/calculator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

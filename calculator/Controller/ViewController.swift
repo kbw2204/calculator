@@ -9,12 +9,39 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var display: UILabel!
+    private var isEdited = false
+    @IBAction func touch_num(_ sender: UIButton) {
+        let digit = sender.currentTitle!
+        if isEdited {
+            let currentDisplay = display.text!
+            display.text = currentDisplay + digit
+        } else {
+            display.text = digit
+        }
+        isEdited = true
     }
-
+    // display 값
+    private var displayValue: Double {
+        get {
+            return Double(display.text!)!
+        }
+        set {
+            display.text = String(newValue)
+        }
+    }
+    // 계산
+    var cal = Calculate()
+    @IBAction private func touch_cal(_ sender: UIButton) {
+        if isEdited {
+            cal.setOperand(operand: displayValue)
+            isEdited = false
+        }
+        if let mathematicalSymbol = sender.currentTitle {
+            cal.performOperand(symbol: mathematicalSymbol)
+        }
+        displayValue = cal.result 
+    }
 
 }
 
