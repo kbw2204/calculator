@@ -44,4 +44,8 @@ class ViewController: UIViewController {
     }
 
 }
+<<<<<<< HEAD
 //다시..
+=======
+// 체리픽됨
+>>>>>>> 4d0d601... 체리픽
